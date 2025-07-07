@@ -1,9 +1,5 @@
 # Simple C to Assembly Transpiler
 
-**Course:** Programming 2  
-**Author:** Margarit Andrei — 315CD  
-**Deadline:** Soft – April 6, 2025 · Hard – April 11, 2025
-
 ## Overview
 
 This project implements a minimal **C-to-Assembly transpiler**, designed to translate simple C-like statements into x86-style assembly instructions. The goal is to understand how high-level language constructs map to low-level operations.
