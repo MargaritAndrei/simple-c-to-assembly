@@ -51,39 +51,41 @@ b = b >> 2;      // SHR ebx, 2
 ### 🧾 Comparisons: `CMP` and Conditional Jumps
 ```c
 if (a == b) {
-    CMP eax, ebx
-    JNE else_label
-    ; ... code ...
-    JMP end_if
-else_label:
-    ; ... else code ...
+
 }
+CMP eax, ebx
+JNE else_label
+; ... code ...
+JMP end_if
+else_label:
+; ... else code ...
+JMP end_if
 end_if:
 ```
 
 ### 🔁 Loops: `for`, `while`
 ```c
 for (a = 0; a < 10; a++) {
-    MOV eax, 0
-start_loop:
-    CMP eax, 10
-    JGE end_loop
-    ; ... loop body ...
-    ADD eax, 1
-    JMP start_loop
-end_loop:
 }
+MOV eax, 0
+start_loop:
+CMP eax, 10
+JGE end_loop
+; ... loop body ...
+ADD eax, 1
+JMP start_loop
+end_loop:
 ```
 
 ```c
 while (b < 5) {
-start_loop:
-    CMP ebx, 5
-    JGE end_loop
-    ; ... loop body ...
-    JMP start_loop
-end_loop:
 }
+start_loop:
+CMP ebx, 5
+JGE end_loop
+; ... loop body ...
+JMP start_loop
+end_loop:
 ```
 
 ## 🧰 Project Structure
